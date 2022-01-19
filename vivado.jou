@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 19 16:26:54 2022
+# Process ID: 3575
+# Current directory: /home/rafael/Desktop/Arty-I2S-FFT
+# Command line: vivado
+# Log file: /home/rafael/Desktop/Arty-I2S-FFT/vivado.log
+# Journal file: /home/rafael/Desktop/Arty-I2S-FFT/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project work_I2S_FFT /home/rafael/Desktop/Arty-I2S-FFT/work_I2S_FFT -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:arty-a7-100:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes /home/rafael/Desktop/Arty-I2S-FFT/src/i2s_transceiver.vhdl
+add_files -fileset constrs_1 -norecurse /home/rafael/Desktop/Arty-I2S-FFT/constr/Arty-A7-100-Master.xdc
+update_compile_order -fileset sources_1
